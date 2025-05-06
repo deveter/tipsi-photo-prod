@@ -21,7 +21,6 @@ import base64
 
 logger = logging.getLogger(__name__)
 load_dotenv()
-print("🔐 API key cargada:", api_key[:8] if api_key else "NO CARGADA")
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 print("🔐 OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY")[:5])
 
